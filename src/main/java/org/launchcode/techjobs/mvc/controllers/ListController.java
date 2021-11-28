@@ -29,7 +29,7 @@ public class ListController {
         columnChoices.put("positionType", "Position Type");
         columnChoices.put("coreCompetency", "Skill");
 
-        /*tableChoices.put("all", "All");*/
+        tableChoices.put("all", "All");  // I thought JobData.findAll() to populate column... didn't work
         tableChoices.put("employer", JobData.getAllEmployers());
         tableChoices.put("location", JobData.getAllLocations());
         tableChoices.put("positionType", JobData.getAllPositionTypes());
