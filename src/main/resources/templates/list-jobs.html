@@ -12,19 +12,41 @@
 
     <!-- TODO #1 - Use a loop to display job results in a table. -->
 
-    <table class="job-listing">
 
-        <tr th:each="job : ${jobs}">
-            <td>
-                <span th:text="'ID: '+ ${job.id}"></span><br>
-                <span th:text="'Name: '+ ${job.name}"></span><br>
-                <span th:text="'Employer: '+ ${job.employer}"></span><br>
-                <span th:text="'Location: '+ ${job.location}"></span><br>
-                <span th:text="'Position Type: '+ ${job.positionType}"></span><br>
-                <span th:text="'Skill: '+ ${job.coreCompetency}"></span>
-            </td>
+    <table th:each="job : ${jobs}" class="job-listing">
+
+        <tr>
+            <th> ID: </th>
+            <td th:text="${job.id}"></td>
         </tr>
+        <tr>
+            <th> Name: </th>
+            <td th:text="${job.name}"></td>
+        </tr>
+        <tr>
+            <th> Employer: </th>
+            <td th:text="${job.employer}"></td>
+        </tr>
+        <tr>
+            <th> Location: </th>
+            <td th:text="${job.location}"></td>
+        </tr>
+        <tr>
+            <th> Position Type: </th>
+            <td th:text="${job.positionType}"></td>
+        </tr>
+        <tr>
+            <th> Skills: </th>
+            <td th:text="${job.coreCompetency}"></td>
+        </tr>
+<!--        <span th:text="'Name: '+ ${job.name}"></span><br>-->
+<!--        <span th:text="'Employer: '+ ${job.employer}"></span><br>-->
+<!--        <span th:text="'Location: '+ ${job.location}"></span><br>-->
+<!--        <span th:text="'Position Type: '+ ${job.positionType}"></span><br>-->
+<!--        <span th:text="'Skill: '+ ${job.coreCompetency}"></span>-->
+
     </table>
+
 
 </div>
 
