@@ -41,7 +41,7 @@ public class SearchController {
        return "search";
     }
     //@PostMapping(value="")
-    //PostMapping because the form in the search.html says "post" value="" because RequestMapping("search")
+    //PostMapping because the form in the search.html says "post" value="/results" because RequestMapping("search")
    // public String displaySearchResults(Model model, @RequestParam String searchType, @RequestParam String searchTerm){
       //  ArrayList<Job> jobs;
 
